@@ -1,0 +1,865 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ ul {
+    list-style: none;
+    height: 100%;
+   
+ }
+ a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;  
+
+ }
+li {
+    display: flex;
+    align-items: center;
+  }
+.logo {
+    display: flex;
+    justify-content: center;
+    height: 190px;
+    align-items: center;
+    padding-bottom: 25px;
+}
+.logo img {
+    width: fit-content;
+    height: 100%;
+}
+ /* navigation------------------ */
+.nav_warp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000000;
+  height: 50px;
+}
+
+ul {
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Menu toggle button styling */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+
+/* -----------PhaanfLogin-------------- */
+.adress-from{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0,0,0.6);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 999;
+  color: black;
+  display: none;
+}
+.adress-from-content{
+  width: 300px;
+  height: 250px;
+  background-color:white; 
+  border-radius: 5px;
+
+  z-index: 10;
+}
+.tadress-from-contentt form{
+  padding: 0 40px;
+}
+.adress-from-content h2{
+  font-size: 17px;
+  padding: 12px 0;
+  border-bottom: 1px solid white;
+  position: relative;
+
+}
+.adress-from-content h2 span{
+  font-size: small  ;
+  display: block;
+  position: absolute;
+  height: 30px;
+  padding: 0 6px;
+  border: 1px solid rgb(8, 8, 8);
+  right: 12px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 30px;
+  color: black;
+  border-radius: 5px;
+}
+.adress-from-content div button{
+  margin-top: 20px;
+  height: 30px;
+  width: 80%;
+  background-color: #7ae3e3;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.adress-from-content div div{
+  padding-bottom:10px;
+}
+
+/* /header--------------------- */
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Each slide (hidden by default) */
+.mySlides {
+  display: none;
+}
+
+/* Slide images */
+.mySlides img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+  /* slide bar------------------ */
+.heading {
+  display: flex;
+  max-width: 100%;
+  align-items: baseline;
+  justify-content: center ;
+}
+div.sidebar{
+  width: 30%;
+  padding-right: 10px;
+
+}
+.hero__categories {
+
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.hero__categories__all {
+  display: flex;
+  align-items: center;
+	background: #504b4b;
+	position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 15px;
+	cursor: pointer;
+}
+#category-list{
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.hero__categories__all:after {
+	position: absolute;
+	right: 18px;
+	top: 9px;
+	content: "🔻";
+	font-family: "ElegantIcons";
+	font-size: 18px;
+	color: #ffffff;
+} 
+.hero__categories__all i {
+	font-size: 16px;
+	color: #ffffff;
+	margin-right: 10px;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.hero__categories__all span {
+	font-size: 18px;
+	font-weight: 700;
+	color: #ffffff;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.hero__categories ul {
+  list-style: none;
+	border: 5px solid #000000;
+	padding: 0;
+  margin: 0;
+
+}
+.hero__categories ul li {
+	list-style: none;
+  margin-bottom: 10px;
+}
+.hero__categories ul li a:hover{
+  background-color: #7ae3e3;
+} 
+
+.hero__categories ul li a {
+	font-size: 16px;
+	color: #333;
+	line-height: 39px;
+	display: block;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.hero__categories ul.hidden {
+  display: none;
+}
+/* .hero_categories_1.hidden{
+  display: none;
+} */
+#category-list li {
+  margin-left: 3px;
+}
+/* body-content------------------ */
+.body_content {
+  width: 70%;
+  height: 100%;
+  padding-right: 2%;
+  /* margin-left: 350px; */
+}
+/* .body_content_1{
+  width: 100%;
+} */
+.product-gallery-one-container-product-items-text a{
+  text-decoration: none;
+}
+.section-title{
+  padding-left: 2%;
+  font-size: 25px;
+}
+.product-gallery-one-container-product {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+
+.product-gallery-one-container-product-items {
+    width: 25%;
+    padding: 50px 15px 12px;
+    border: 1px solid #898989;
+    cursor: pointer;
+    box-sizing: border-box;  /*Đảm bảo padding không làm tăng kích thước hộp */
+ 
+    /* margin-bottom: 2%; */
+}
+
+.product-gallery-one-container-product-items:hover img {
+    transform: translateY(-20px);
+}
+
+.product-gallery-one-container-product-items img {
+  width: 100%;
+  transition: all 0.3s ease;
+  
+}
+
+.product-gallery-one-container-product-items-text {
+  padding-top: 20px;
+  text-decoration: none;
+}
+.product-gallery-one-container-product-items-text li {
+  margin-bottom: 6px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.product-gallery-one-container-product-items-text li:first-child {
+  height: 30px;
+  width: 70%;
+  background-color: white;
+  display: inline-block;
+  align-items: center;
+  line-height: 30px;
+  border-radius: 40px;
+}
+.product-gallery-one-container-product-items-text li:nth-child(2):hover {
+  color: red;
+ }
+.product-gallery-one-container-product-items-text li:nth-child(4) a {
+ text-decoration: line-through;
+ color: #ff0000;
+ }
+
+.product-gallery-one-container-product-items-text li:nth-child(4) {
+  font-weight: bold;
+}
+.product-gallery-one-container-product-items-text:hover {
+  color: red;
+}
+/* footer------------------ */
+footer {
+  background-color: #000000; 
+  color: #fff;
+  padding: 20px 0;
+  
+}
+
+.footer-trong {
+  display: flex;
+  flex-wrap: wrap; /* Đảm bảo các cột sẽ xuống hàng trên màn hình nhỏ */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; 
+}
+
+.cotthu1 {
+  flex: 1; 
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cotthu1 img {
+  max-width: 50%;
+  height: auto;
+}
+
+.caccot {
+  display: flex;
+  flex: 3; 
+  justify-content: space-between; 
+  flex-wrap: wrap; 
+  gap: 20px; /* Khoảng cách giữa các cột */
+}
+
+.caccot  div {
+  flex: 2; 
+  min-width: 200px; 
+  margin-bottom: 20px; 
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100; 
+}
+
+.caccot h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase; 
+}
+
+.caccot p {
+  margin: 5px 0;
+  
+}
+
+.caccot a {
+  color: #fff; 
+  text-decoration: none; 
+}
+
+.caccot a:hover {
+  text-decoration: underline; 
+}
+
+.caccot .cotthu5 a img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px; /* Khoảng cách giữa các icon */
+}
+.footer1 a i.fa-facebook {
+  color: #3b5998; /* Màu icon Facebook */
+}
+
+.footer1 a i.fa-tiktok {
+  color: #ffffff; /* Màu icon TikTok */
+}
+.myiframe-container {
+  display: flex;
+  justify-content: center;
+  
+}
+.myiframe {
+  padding-bottom: 5px;
+  width: 1200px;
+}
+
+
+/* -------------Nav----------------------------- */
+/* Responsive styles */
+@media (max-width: 768px) {
+  .col_left, .col_right {
+      flex-direction: column;
+      display: none;
+    
+  }
+.nav_warp.active{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    background-color: black;
+}
+.active{
+  background-color: black;
+}
+  .nav_warp {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+  }
+.category-list span {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+  .menu-toggle {
+      display: flex;
+  }
+
+  .nav_warp.active .col_left,
+  .nav_warp.active .col_right {
+      display: flex;
+  }
+  span {
+    font-size: 25px;
+  }
+  .address-form {
+      display: none;
+  }
+  /* .adress-from-content{
+    
+  } */
+  .col_left {
+    padding-top: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+   
+  }
+  .col_left a {
+    padding: 5px 0px 5px 0px;
+  }
+  .col_right{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+ 
+  .col_right a{
+    padding: 5px 0px 5px 0px;
+  }
+}
+/* -----------------slide show------------------ */
+@keyframes fade {
+  from { opacity: .4 } 
+  to { opacity: 1 }
+}
+
+/* Responsive styles */
+  @media only screen and (max-width: 768px) {
+    .text {
+      font-size: 12px;
+    }
+
+    .numbertext {
+      font-size: 10px;
+    }
+
+    .dot {
+      height: 12px;
+      width: 12px;
+    }
+    .slideshow-container {
+      max-width: 100%; /* Increase size on smaller screens */
+    }
+  
+    .mySlides img {
+      min-height: 200px; /* Ensure images have a minimum height */
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .text {
+      font-size: 10px;
+    }
+
+    .numbertext {
+      font-size: 8px;
+    }
+
+    .dot {
+      height: 10px;
+      width: 10px;
+    } 
+}
+/* -----------gộp chung slide bar và heading------------------------- */
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .heading {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 100%;
+  }
+  div.sidebar{
+    width: 90%;
+  }
+  .hero__categories{
+    width: 100%;
+  }
+  .sidebar, .body_content {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .product-gallery-one-container-product-items {
+    width: 50%;
+    margin-bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .product-gallery-one-container-product-items {
+    width: 100%;
+  }
+  
+}
+
+
+/* -----------footer------------------------- */
+@media screen and (max-width: 768px) {
+  .footer-trong {
+    flex-direction: column; /* Chuyển footer thành cột trên màn hình nhỏ */
+    align-items: center; /* Căn giữa các cột */
+  }
+
+  .cotthu1 {
+    margin-bottom: 10px; /* Khoảng cách dưới giữa các phần tử */
+  }
+
+  .caccot {
+    flex-direction: column; /* Chuyển các cột thành hàng dọc */
+    align-items: center; /* Căn giữa các cột */
+  }
+
+  .caccot > div {
+    text-align: center; /* Căn giữa văn bản trong cột */
+    margin-bottom: 20px; /* Khoảng cách dưới giữa các cột */
+    min-width: 100%; /* Đảm bảo cột chiếm toàn bộ chiều rộng trên màn hình nhỏ */
+  }
+
+  .cotthu1 img {
+    max-width: 50%; /* Điều chỉnh kích thước logo cho màn hình nhỏ */
+  }
+  .footer1 a i.fa-facebook {
+    color: #3b5998; /* Màu icon Facebook */
+  }
+  
+  .footer1 a i.fa-tiktok {
+    color: #ffffff; /* Màu icon TikTok */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cotthu1 img {
+    max-width: 50%; /* Điều chỉnh kích thước logo cho màn hình rất nhỏ */
+  }
+
+  .caccot h5 {
+    font-size: 14px; /* Giảm kích thước chữ của tiêu đề trên màn hình rất nhỏ */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+
+  }
+}
+
+/* -------------------tabled-------------------------- */
+/* -------------Nav----------------------------- */
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .col_left, .col_right {
+      flex-direction: column;
+      display: none;
+  }
+
+  .nav_warp.active {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+      background-color: black;
+  }
+
+  .active {
+      background-color: black;
+  }
+
+  .nav_warp {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+  }
+
+  .category-list span {
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+
+  .menu-toggle {
+      display: flex;
+  }
+
+  .nav_warp.active .col_left,
+  .nav_warp.active .col_right {
+      display: flex;
+  }
+
+  span {
+      font-size: 25px;
+  }
+
+  .address-form {
+      display: none;
+  }
+
+  .col_left {
+      padding-top: 10px;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+  }
+
+  .col_left a {
+      padding: 5px 0px 5px 0px;
+  }
+
+  .col_right {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: flex-start;
+  }
+
+  .col_right a {
+      padding: 5px 0px 5px 0px;
+  }
+}
+
+/* -----------------slide show------------------ */
+@keyframes fade {
+  from { opacity: .4 } 
+  to { opacity: 1 }
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 1024px) {
+  .text {
+    font-size: 12px;
+  }
+
+  .numbertext {
+    font-size: 10px;
+  }
+
+  .dot {
+    height: 12px;
+    width: 12px;
+  }
+
+  .slideshow-container {
+    max-width: 100%; /* Increase size on smaller screens */
+  }
+
+  .mySlides img {
+    min-height: 200px; /* Ensure images have a minimum height */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .text {
+    font-size: 10px;
+  }
+
+  .numbertext {
+    font-size: 8px;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+/* -----------Heading Adjustments------------------------- */
+/* Responsive adjustments for heading */
+@media only screen and (max-width: 1024px) {
+  .heading {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+/* -----------Sidebar ------------------------- */
+/* Responsive  sidebar */
+@media only screen and (max-width: 1024px) {
+  div.sidebar {
+    width: 90%;
+  }
+
+  .hero__categories {
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+/* -----------Body Content ------------------------- */
+/* Responsive body content */
+@media only screen and (max-width: 1024px) {
+  .body_content {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .product-gallery-one-container-product-items {
+    width: 50%;
+    margin-bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .product-gallery-one-container-product-items {
+    width: 100%;
+  }
+}
+/* Responsive adjustments for tablet */
+@media screen and (max-width: 1024px) {
+  .footer-trong {
+    flex-direction: column; /* Chuyển footer thành cột trên màn hình nhỏ */
+    align-items: center; /* Căn giữa các cột */
+  }
+
+  .cotthu1 {
+    margin-bottom: 10px; /* Khoảng cách dưới giữa các phần tử */
+  }
+
+  .caccot {
+    flex-direction: column; /* Chuyển các cột thành hàng dọc */
+    align-items: center; /* Căn giữa các cột */
+  }
+
+  .caccot > div {
+    text-align: center; /* Căn giữa văn bản trong cột */
+    margin-bottom: 20px; /* Khoảng cách dưới giữa các cột */
+    min-width: 100%; /* Đảm bảo cột chiếm toàn bộ chiều rộng trên màn hình nhỏ */
+  }
+
+  .cotthu1 img {
+    max-width: 50%; /* Điều chỉnh kích thước logo cho màn hình nhỏ */
+  }
+  .footer1 a i.fa-facebook {
+    color: #3b5998; /* Màu icon Facebook */
+  }
+  
+  .footer1 a i.fa-tiktok {
+    color: #ffffff; /* Màu icon TikTok */
+  }
+}
+
+

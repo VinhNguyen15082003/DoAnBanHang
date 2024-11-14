@@ -1,0 +1,1236 @@
+body{
+  margin: 0;
+  
+}
+ul {
+  list-style: none;
+  height: 100%;
+ 
+}
+a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%; 
+  color: white;
+  
+
+}
+li {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  height: 190px;
+  align-items: center;
+  padding-bottom: 25px;
+}
+.logo img {
+  width: fit-content;
+  height: 100%;
+}
+/* navigation------------------ */
+.nav_warp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000000;
+  height: 50px;
+}
+
+ul {
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Menu toggle button styling */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* -----------PhaanfLogin-------------- */
+.adress-from{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0,0,0.6);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 999;
+  color: black;
+  display: none;
+}
+.adress-from-content{
+  width: 300px;
+  height: 250px;
+  background-color:white; 
+  border-radius: 5px;
+
+  z-index: 10;
+}
+.tadress-from-contentt form{
+  padding: 0 40px;
+}
+.adress-from-content h2{
+  font-size: 17px;
+  padding: 12px 0;
+  border-bottom: 1px solid white;
+  position: relative;
+
+}
+.adress-from-content h2 span{
+  font-size: small  ;
+  display: block;
+  position: absolute;
+  height: 30px;
+  padding: 0 6px;
+  border: 1px solid rgb(8, 8, 8);
+  right: 12px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 30px;
+  color: black;
+  border-radius: 5px;
+}
+.adress-from-content div button{
+  margin-top: 20px;
+  height: 30px;
+  width: 80%;
+  background-color: #7ae3e3;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.adress-from-content div div{
+  padding-bottom:10px;
+}
+
+/* --------------header----------------------- */
+.header{
+  width: 100%;
+  height: 100%;
+}
+.dongdau{
+  padding-top: 20px;
+  font-size: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  
+}
+.content-wrap{
+  display: flex;
+  width: 100%;
+}
+.cotTrai{
+  width: 50%;
+
+  float: left;
+}
+/* .cotTrai img{
+  width: 507px;
+  height: 760px;
+} */
+.cotPhai{
+  width: 50%;
+
+
+}
+
+/* --------------------slider------------- */
+/*Time for the CSS*/
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+}
+
+.mySlides {
+  padding-left: 30%;
+height: 10%;
+width: 80%;
+display: flex;
+height: 450px;
+align-items: center;
+  
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  height: 60px;
+  
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 10px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding-left: 30%;
+}
+
+
+.column {
+  float: left;
+  width: 16.66%;
+  padding-right: 10px;
+  display: flex;
+  padding-left: 10%;
+}
+
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* --------------------ThongTinSP----------------------- */
+.TenSP{
+  font-size:50px;
+  width: 100%;
+}
+.price{
+  font-size: 40px;
+  font-weight: bold;
+  color: green;
+}
+.pro-qty {
+	width: 140px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	background: #f5f5f5;
+	margin-bottom: 5px;
+  float: left;
+}
+
+.pro-qty input {
+	height: 100%;
+	width: 100%;
+	font-size: 16px;
+	color: #6f6f6f;
+	width: 50px;
+	border: none;
+	background: #f5f5f5;
+	text-align: center;
+}
+
+.pro-qty .qtybtn {
+	width: 35px;
+	font-size: 16px;
+	color: #6f6f6f;
+	cursor: pointer;
+	display: inline-block; 
+}
+.primary-btn {
+	display: inline-block;
+	font-size: 14px;
+	padding: 16px 28px 10px;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-weight: 700;
+	background: #ff9933;
+	letter-spacing: 2px;
+  height: 50px;
+  width: 150px;
+}
+/* -----------------ThongTinSP--------------------- */
+.ThongTin p{
+  font-size: 30px;
+  font-weight: bold;
+  
+}
+.ThongTin ul{
+  font-size: 25px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  list-style: none;
+}
+.SanPhamTen p{
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: #050505;
+}
+/* -------------bodyArea-------------------- */
+.BodyArea1{
+  width: 100%;
+  height: 100%;
+  padding-right: 2%;
+ }
+ 
+ .product-gallery-one-container-product{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+ }
+ .product-gallery-one-container-product-items{
+   width: 20%;
+   padding: 50px 25px 12px;
+   border: 1px solid #898989;
+   cursor: pointer;
+ }
+ .product-gallery-one-container-product-items-text a{
+  text-decoration: none;
+  color: #000000;
+
+}
+ .product-gallery-one-container-product-items:hover img{
+ transform: translateY(-20px);
+ }
+ .product-gallery-one-container-product-items img{
+   width: 100%;
+   transition: all 0.3s ease;
+ }
+ .product-gallery-one-container-product-items-text{
+   padding-top: 20px;
+ }
+ .product-gallery-one-container-product-items-text li{
+   
+   margin-bottom: 6px;
+   font-size: 20px;
+   list-style: none;
+ }
+ 
+ .product-gallery-one-container-product-items-text li:first-child{
+   height: 30px;
+   width: 70%;
+   background-color:white;
+   display: inline-block;
+     align-items: center;
+     line-height: 30px;
+     border-radius: 40px;
+    
+ }
+ /* .product-gallery-one-container-product-items-text li:first-child p{
+   color: black;
+   font-size: 15px;
+ } */
+ /* .product-gallery-one-container-product-items-text li p:hover{
+   color: red;
+ } */
+ 
+ .product-gallery-one-container-product-items-text li:nth-child(2):hover{
+   color: red;
+ }
+ .product-gallery-one-container-product-items-text li:nth-child(4) a{
+   text-decoration: line-through;
+   color: #ff0000;
+ }
+ .product-gallery-one-container-product-items-text li:nth-child(4) {
+   font-weight: bold;
+ }
+ /* .product-gallery-one-container-product-items-text li:hover{
+   color: red;
+ } */
+ .product-gallery-one-container-product-items-text:hover{
+   color: red;
+ }
+ /* ------------------footer---------- */
+ /* footer------------------ */
+footer {
+  background-color: #000000; 
+  color: #fff;
+  padding: 20px 0;
+  
+}
+
+.footer-trong {
+  display: flex;
+  flex-wrap: wrap; /* Đảm bảo các cột sẽ xuống hàng trên màn hình nhỏ */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; 
+}
+
+.cotthu1 {
+  flex: 1; 
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cotthu1 img {
+  max-width: 50%;
+  height: auto;
+}
+
+.caccot {
+  display: flex;
+  flex: 3; 
+  justify-content: space-between; 
+  flex-wrap: wrap; 
+  gap: 20px; /* Khoảng cách giữa các cột */
+}
+
+.caccot  div {
+  flex: 2; 
+  min-width: 200px; 
+  margin-bottom: 20px; 
+    font-family: "League Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100; 
+}
+
+.caccot h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase; 
+}
+
+.caccot p {
+  margin: 5px 0;
+  
+}
+
+.caccot a {
+  color: #fff; 
+  text-decoration: none; 
+}
+
+.caccot a:hover {
+  text-decoration: underline; 
+}
+
+.caccot .cotthu5 a img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px; /* Khoảng cách giữa các icon */
+}
+.footer1 a i.fa-facebook {
+  color: #3b5998; /* Màu icon Facebook */
+}
+
+.footer1 a i.fa-tiktok {
+  color: #ffffff; /* Màu icon TikTok */
+}
+.myiframe-container {
+  display: flex;
+  justify-content: center;
+  
+}
+.myiframe {
+  padding-bottom: 5px;
+  width: 1200px;
+ 
+
+}
+/* --------------------------------------------kiểu mobile------------------------------------------------------------- */
+@media only screen and (max-width: 768px) {
+  /* Đặt các thuộc tính cho menu di động */
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+      z-index: 10;
+     
+    }
+  }
+  /* -------------Nav----------------------------- */
+/* Responsive styles */
+@media (max-width: 768px) {
+  .col_left, .col_right {
+      flex-direction: column;
+      display: none;
+    
+  }
+  /* ---------------Nav------------- */
+.nav_warp.active{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    background-color: black;
+}
+.active{
+  background-color: black;
+}
+  .nav_warp {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+  }
+.category-list span {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+  .menu-toggle {
+      display: flex;
+  }
+
+  .nav_warp.active .col_left,
+  .nav_warp.active .col_right {
+      display: flex;
+  }
+  span {
+    font-size: 25px;
+  }
+  .address-form {
+      display: none;
+  }
+  /* .adress-from-content{
+    
+  } */
+  .col_left {
+    padding-top: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+   
+  }
+  .col_left a {
+    padding: 5px 0px 5px 0px;
+  }
+  .col_right{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+ 
+  .col_right a{
+    padding: 5px 0px 5px 0px;
+  }
+}
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+  
+    }
+  }
+  /* --------------------San Pham TuongTu--------------- */
+  .mobile-menu-icon {
+    display: block; /* Hiển thị biểu tượng hoặc nút cho menu di động */
+  }
+  /* Điều chỉnh kích thước và vị trí của phần tử form đăng nhập */
+  @media only screen and (max-width: 768px) {
+    .adress-from {
+        align-items: center; /* Căn theo phía trên */
+    }
+
+    .adress-from-content {
+        width: 90%;
+        max-width: 90%; /* Giữ kích thước tối đa */
+    }
+}
+@media only screen and (max-width: 768px) {
+  .adress-from {
+      align-items: flex-start; /* Căn theo phía trên */
+  }
+
+  .adress-from-content {
+      width: 90%;
+      max-width: 90%; /* Giữ kích thước tối đa */
+  }
+}
+  /* Điều chỉnh bố cục và kích thước của các phần tử khác */
+  .cotTrai,
+  .cotPhai {
+    width: 100%; /* Sử dụng toàn bộ chiều rộng trên thiết bị di động */
+  }
+  /* Điều chỉnh kích thước hình ảnh trong slider */
+  
+  .mySlides img {
+    width: 100%; /* Hình ảnh sẽ điều chỉnh theo chiều rộng của màn hình */
+    height: 50%; /* Đảm bảo tỷ lệ hình ảnh không bị méo */
+  }
+  @media only screen and (max-width: 768px) {
+    .mySlides {
+      padding-left: 0; /* Xóa padding trái */
+    }
+  
+    .prev,
+    .next {
+      padding: 8px; /* Giảm độ lớn của nút trượt */
+      font-size: 16px; /* Giảm kích thước của chữ */
+    }
+  
+    .row:after {
+      padding-left: 0; /* Xóa padding trái */
+    }
+  }
+  /* Điều chỉnh bố cục của các sản phẩm tương tự */
+  .product-gallery-one-container-product-items {
+    width: 100%; /* Sử dụng toàn bộ chiều rộng trên thiết bị di động */
+    padding: 20px; /* Điều chỉnh khoảng cách giữa các sản phẩm */
+    box-sizing: border-box; /* Đảm bảo padding không tăng kích thước tổng thể của phần tử */
+  }
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+      z-index: 10;
+     
+    }
+  }
+
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+  
+    }
+  }
+
+  /* PhaanfLogin */
+  .adress-from {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0,0,0.6);
+    top: 0;
+    left: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 999;
+    color: black;
+    display: none;
+    
+  }
+  /* ------------thongtinsp------------ */
+  @media only screen and (max-width: 768px) {
+    .TenSP{
+      font-size: 24px; /* Giảm kích thước font cho tên sản phẩm */
+    }
+    .price{
+      font-size: 18px; /* Giảm kích thước font cho giá */
+    }
+    .pro-qty input {
+      height: 40px; /* Điều chỉnh chiều cao của input */
+    }
+    .primary-btn {
+      padding: 14px 24px 8px; /* Điều chỉnh padding của nút */
+      height: 50px; /* Điều chỉnh chiều cao của nút */
+    }
+  }
+/* --------------------------slideshow--------------------------- */
+/* -----------phaanfhinh----------------- */
+@media only screen and (max-width: 768px) {
+  /* Điều chỉnh chiều rộng của header và slider */
+  .header {
+    height: auto; /* Đưa chiều cao của header về tự động */
+  }
+  .content-wrap {
+    flex-direction: column; /* Sắp xếp các phần tử của content-wrap theo chiều dọc */
+  }
+  .cotTrai, .cotPhai {
+    width: 100%; /* Các cột chiếm toàn bộ chiều rộng của màn hình */
+  }
+
+  /* Điều chỉnh các thuộc tính của slider */
+  .mySlides {
+    padding-left: 150px; /* Loại bỏ padding bên trái */
+    width: 80%; /* Hình ảnh chiếm toàn bộ chiều rộng */
+    height: auto; /* Chiều cao tự động điều chỉnh */
+    justify-content: center; /* Căn giữa các hình ảnh */
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .row{
+    background-color: white;
+  }
+}
+/* ---------------phần slide------------------- */
+@media only screen and (max-width: 768px) {
+  .prev,
+  .next {
+    top: 50%; /* Điều chỉnh vị trí của nút prev và next */
+    margin-top: -25px; /* Điều chỉnh margin top để căn giữa nút */
+    padding: 10px; /* Điều chỉnh padding của nút */
+    font-size: 16px; /* Giảm kích thước font cho nút */
+    border-radius: 50%; /* Bo tròn nút */
+  }
+
+  .next {
+    right: 10px; /* Đẩy nút next ra phía bên phải */
+    left: auto; /* Bỏ qua thuộc tính left */
+  }
+
+  .numbertext {
+    font-size: 10px; /* Giảm kích thước font cho số thứ tự */
+    padding: 4px 8px; /* Điều chỉnh padding */
+  }
+
+  .caption-container {
+    padding: 1px 5px; /* Điều chỉnh padding */
+  }
+
+  .row:after {
+    padding-left: 0; /* Không cần thiết cho màn hình di động */
+  }
+
+  .column {
+    width: 20%; /* Hiển thị 3 ảnh mỗi hàng */
+    padding-right: 5px; /* Điều chỉnh khoảng cách giữa các ảnh */
+    padding-left: 5px; /* Điều chỉnh khoảng cách giữa các ảnh */
+  }
+
+  .demo {
+    opacity: 1; /* Hiển thị ảnh thumbnail */
+    padding-bottom: 20px;
+  }
+  .TenSP{
+    font-size: 30px;
+  }
+  .price{
+    font-size: 25px;
+  }
+}
+/* -----------footer------------------------- */
+@media screen and (max-width: 768px) {
+  .footer-trong {
+    flex-direction: column; /* Chuyển footer thành cột trên màn hình nhỏ */
+    align-items: center; /* Căn giữa các cột */
+  }
+
+  .cotthu1 {
+    margin-bottom: 10px; /* Khoảng cách dưới giữa các phần tử */
+  }
+
+  .caccot {
+    flex-direction: column; /* Chuyển các cột thành hàng dọc */
+    align-items: center; /* Căn giữa các cột */
+  }
+
+  .caccot > div {
+    text-align: center; /* Căn giữa văn bản trong cột */
+    margin-bottom: 20px; /* Khoảng cách dưới giữa các cột */
+    min-width: 100%; /* Đảm bảo cột chiếm toàn bộ chiều rộng trên màn hình nhỏ */
+  }
+
+  .cotthu1 img {
+    max-width: 50%; /* Điều chỉnh kích thước logo cho màn hình nhỏ */
+  }
+  .footer1 a i.fa-facebook {
+    color: #3b5998; /* Màu icon Facebook */
+  }
+  
+  .footer1 a i.fa-tiktok {
+    color: #ffffff; /* Màu icon TikTok */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cotthu1 img {
+    max-width: 50%; /* Điều chỉnh kích thước logo cho màn hình rất nhỏ */
+  }
+
+  .caccot h5 {
+    font-size: 14px; /* Giảm kích thước chữ của tiêu đề trên màn hình rất nhỏ */
+  }
+}
+
+}
+
+/* ------------------tablet--------------------- */
+/* Đặt các thuộc tính cho menu di động */
+@media screen and (max-width: 1024px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    z-index: 10;
+  }
+}
+
+/* Responsive styles for Nav */
+@media (max-width: 1024px) {
+  .col_left, .col_right {
+    flex-direction: column;
+    display: none;
+  }
+
+  .nav_warp.active {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    background-color: black;
+  }
+  .active {
+    background-color: black;
+  }
+  .nav_warp {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+  .category-list span {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .nav_warp.active .col_left,
+  .nav_warp.active .col_right {
+    display: flex;
+  }
+  span {
+    font-size: 25px;
+  }
+  .address-form {
+    display: none;
+  }
+  .col_left {
+    padding-top: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .col_left a {
+    padding: 5px 0px 5px 0px;
+  }
+  .col_right {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .col_right a {
+    padding: 5px 0px 5px 0px;
+  }
+}
+
+/* Additional adjustments for tablet */
+@media screen and (max-width: 1024px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* --------------------------Nav---------------- */
+/* Responsive styles for Nav */
+@media (max-width: 1024px) {
+  .col_left, .col_right {
+    flex-direction: column;
+    display: none;
+  }
+  
+  /* Nav */
+  .nav_warp.active {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    background-color: black;
+  }
+  .active {
+    background-color: black;
+  }
+  .nav_warp {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+  .category-list span {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .nav_warp.active .col_left,
+  .nav_warp.active .col_right {
+    display: flex;
+  }
+  span {
+    font-size: 25px;
+  }
+  .address-form {
+    display: none;
+  }
+  .col_left {
+    padding-top: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .col_left a {
+    padding: 5px 0px 5px 0px;
+  }
+  .col_right {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .col_right a {
+    padding: 5px 0px 5px 0px;
+  }
+}
+
+/* Additional adjustments for tablet */
+@media screen and (max-width: 1024px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* ---------------------SanPham------------------- */
+/* Responsive styles for San Pham TuongTu */
+@media only screen and (max-width: 1024px) {
+  .mobile-menu-icon {
+    display: block; /* Hiển thị biểu tượng hoặc nút cho menu di động */
+  }
+  
+  /* Điều chỉnh kích thước và vị trí của phần tử form đăng nhập */
+  .adress-from {
+    align-items: center; /* Căn theo phía trên */
+  }
+
+  .adress-from-content {
+    width: 90%;
+    max-width: 90%; /* Giữ kích thước tối đa */
+  }
+
+  /* Điều chỉnh bố cục và kích thước của các phần tử khác */
+  .cotTrai,
+  .cotPhai {
+    width: 100%; /* Sử dụng toàn bộ chiều rộng trên thiết bị di động */
+  }
+  
+  /* Điều chỉnh kích thước hình ảnh trong slider */
+  .mySlides img {
+    width: 100%; /* Hình ảnh sẽ điều chỉnh theo chiều rộng của màn hình */
+    height: 50%; /* Đảm bảo tỷ lệ hình ảnh không bị méo */
+  }
+  
+  .mySlides {
+    padding-left: 0; /* Xóa padding trái */
+  }
+
+  .prev,
+  .next {
+    padding: 8px; /* Giảm độ lớn của nút trượt */
+    font-size: 16px; /* Giảm kích thước của chữ */
+  }
+
+  .row:after {
+    padding-left: 0; /* Xóa padding trái */
+  }
+
+  /* Điều chỉnh bố cục của các sản phẩm tương tự */
+  .product-gallery-one-container-product-items {
+    width: 100%; /* Sử dụng toàn bộ chiều rộng trên thiết bị di động */
+    padding: 20px; /* Điều chỉnh khoảng cách giữa các sản phẩm */
+    box-sizing: border-box; /* Đảm bảo padding không tăng kích thước tổng thể của phần tử */
+  }
+}
+
+/* Additional adjustments for tablet */
+@media only screen and (max-width: 1024px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    z-index: 10;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  /* PhaanfLogin */
+  .adress-from {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0; /* Sửa giá trị của thuộc tính left */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 999;
+    color: black;
+    display: none;
+  }
+}
+
+/* ---------------ThongtinSP------------------ */
+/* Responsive styles for thongtinsp */
+@media only screen and (max-width: 1024px) {
+  .TenSP {
+    font-size: 24px; /* Giảm kích thước font cho tên sản phẩm */
+  }
+
+  .price {
+    font-size: 18px; /* Giảm kích thước font cho giá */
+  }
+
+  .pro-qty input {
+    height: 40px; /* Điều chỉnh chiều cao của input */
+  }
+
+  .primary-btn {
+    padding: 14px 24px 8px; /* Điều chỉnh padding của nút */
+    height: 50px; /* Điều chỉnh chiều cao của nút */
+  }
+}
+
+/* --------------------------slideshow--------------------------- */
+/* -----------phaanfhinh----------------- */
+@media only screen and (max-width: 1024px) {
+  /* Điều chỉnh các thuộc tính của slider */
+  .mySlides {
+    padding-left: 50px; /* Loại bỏ padding bên trái */
+    padding-right: 50px;
+    width: 100%; /* Hình ảnh chiếm toàn bộ chiều rộng */
+    height: auto; /* Chiều cao tự động điều chỉnh */
+    justify-content: center; /* Căn giữa các hình ảnh */
+    text-align: center;
+    padding-bottom: 50px; /* Thay đổi khoảng cách phía dưới */
+  }
+}
+
+/* ---------------phần slide------------------- */
+@media only screen and (max-width: 1024px) {
+  .prev,
+  .next {
+    top: 50%; /* Điều chỉnh vị trí của nút prev và next */
+    margin-top: -25px; /* Điều chỉnh margin top để căn giữa nút */
+    padding: 10px; /* Điều chỉnh padding của nút */
+    font-size: 16px; /* Giảm kích thước font cho nút */
+    border-radius: 50%; /* Bo tròn nút */
+  }
+  .row {
+    width: 100%;
+    height: 120px;
+}
+  .next {
+    right: 10px; /* Đẩy nút next ra phía bên phải */
+    left: auto; /* Bỏ qua thuộc tính left */
+  }
+
+  .numbertext {
+    font-size: 10px; /* Giảm kích thước font cho số thứ tự */
+    padding: 4px 8px; /* Điều chỉnh padding */
+  }
+
+  .caption-container {
+    padding: 1px 5px; /* Điều chỉnh padding */
+  }
+
+  .row:after {
+    padding-left: 0; /* Không cần thiết cho màn hình di động */
+  }
+
+  .column {
+    width: 20%; /* Hiển thị 3 ảnh mỗi hàng */
+    padding-right: 5px; /* Điều chỉnh khoảng cách giữa các ảnh */
+    padding-left: 5px; /* Điều chỉnh khoảng cách giữa các ảnh */
+  }
+
+  .demo {
+    opacity: 1; /* Hiển thị ảnh thumbnail */
+    padding-bottom: 20px;
+  }
+  .TenSP{
+    font-size: 30px;
+  }
+  .price{
+    font-size: 25px;
+  }
+}
+
+/* -----------footer------------------------- */
+@media screen and (max-width: 1024px) {
+  .footer-trong {
+    flex-direction: column; /* Chuyển footer thành cột trên màn hình nhỏ */
+    align-items: center; /* Căn giữa các cột */
+  }
+
+  .cotthu1 {
+    margin-bottom: 10px; /* Khoảng cách dưới giữa các phần tử */
+  }
+
+  .caccot {
+    flex-direction: column; /* Chuyển các cột thành hàng dọc */
+    align-items: center; /* Căn giữa các cột */
+  }
+
+  .caccot > div {
+    text-align: center; /* Căn giữa văn bản trong cột */
+    margin-bottom: 20px; /* Khoảng cách dưới giữa các cột */
+    min-width: 100%; /* Đảm bảo cột chiếm toàn bộ chiều rộng trên màn hình nhỏ */
+  }
+
+  .cotthu1 img {
+    max-width: 50%; /* Điều chỉnh kích thước logo cho màn hình nhỏ */
+  }
+  .footer1 a i.fa-facebook {
+    color: #3b5998; /* Màu icon Facebook */
+  }
+  
+  .footer1 a i.fa-tiktok {
+    color: #ffffff; /* Màu icon TikTok */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cotthu1 img {
+    max-width: 50%; /* Điều chỉnh kích thước logo cho màn hình rất nhỏ */
+  }
+
+  .caccot h5 {
+    font-size: 14px; /* Giảm kích thước chữ của tiêu đề trên màn hình rất nhỏ */
+  }
+}
+
+/* -----------anhSPTT---------------------- */
+@media only screen and (max-width: 1024px) {
+  .product-gallery-one-container-product-items {
+    width: 50%; /* Chia 2 sản phẩm trên một dòng */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .product-gallery-one-container-product-items {
+    width: 100%; /* Hiển thị mỗi sản phẩm trên một dòng trên thiết bị di động */
+    padding: 30px 15px 12px; /* Điều chỉnh khoảng cách giữa sản phẩm trên thiết bị di động */
+  }
+}

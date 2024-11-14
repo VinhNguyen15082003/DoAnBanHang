@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/dangky.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>(function (w, d) { w.CollectId = "664584ae1063215eaa11ee44"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async = true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+    <title>Log Horizon</title>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./img/logo1.png" alt="">
+    </div>
+    <nav>
+        <div class="nav_warp">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="col_left">
+                <li><a href="index.html"><span>Trang Chủ</span></a></li>
+                <li><a href="#"><span>Nendoroid Pre-Order</span></a></li>
+                <li><a href="#"><span>Scale Pre-Order</span></a></li>
+                <li><a href="#"><span>Thương Hiệu</span></a></li>
+                <li><a href="lienhe.html"><span>Liên Hệ</span></a></li>
+            </ul>
+            <ul class="col_right">
+                <li><a href="thongtinthanhtoan.html"><span>Đặt Hàng</span></a></li>
+                <li><a href="dangky.html"><span>Đăng Ký</span></a></li>
+                <li><a id="adress-from" href="#"><span>Đăng Nhập</span></a>
+                    <div class="adress-from">
+                        <div class="adress-from-content">
+                            <h2>form Đăng Nhập <span id="adress-closs">X Đóng</span></h2>
+                            <div>
+                                <center>
+                                    <p>
+                                    <h3>Đăng Nhập</h3>
+                                    </p>
+                                </center>
+                                <div>Tài Khoản: <input type="text" name="" id=""></div>
+                                <div>Mật Khẩu : <input type="text" name="" id=""></div>
+                            </div>
+                            <div>
+                                <button> Đăng nhập </button>
+                            </div>
+                        </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function () {
+            document.querySelector('.nav_warp').classList.toggle('active');
+        });
+    </script>
+    <div class="register">
+        <section class="registration spad">
+            <div class="container">
+                <div class="registration__form">
+                    <h2>Đăng ký</h2>
+                    <form id="registrationForm" action="#">
+                        <div class="form-group">
+                            <label for="fullName">Họ Tên<span>*</span></label>
+                            <input type="text" id="fullName">
+                            <div class="error-message" id="fullNameErrorMessage"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email<span>*</span></label>
+                            <input type="email" id="email">
+                            <div class="error-message" id="emailErrorMessage"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Mật khẩu<span>*</span></label>
+                            <input type="password" id="password">
+                            <div class="error-message" id="passwordErrorMessage"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Xác nhận Mật khẩu<span>*</span></label>
+                            <input type="password" id="confirmPassword">
+                            <div class="error-message" id="confirmPasswordErrorMessage"></div>
+                        </div>
+                        <button type="button" class="site-btn" onclick="validateForm()">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- -------------footer-------------------- -->
+    <footer id="footer">
+        <div class="footer-trong">
+            <div class="cotthu1">
+                <img src="./img/logo footer.png" alt="Logo">
+            </div>
+            <div class="caccot">
+                <div class="cotthu2">
+                    <h5>thông tin liên hệ</h5>
+                    <p><strong>Địa chỉ: </strong>180 Cao Lỗ, P4, Quận 8, TP.HCM</p>
+                    <p><strong>Mở cửa:</strong> 10:00 - 21:00</p>
+                    <p>Hotline: 0349539904</p>
+                </div>
+                <div class="cotthu3">
+                    <h5 class=""> Quy định chung</h5>
+                    <p><a href="">Chính sách Giao hàng</a></p>
+                    <p><a href="">Chính sách bảo hành</a></p>
+                    <p><a href="">Chính sách Tích điểm</a></p>
+                    <p><a href="">Chính sách đổi trả</a></p>
+                    <p><a href="">Chính sách giá</a></p>
+                </div>
+                <div class="cotthu4">
+                    <h5 class="">Thông Tin Sinh Viên</h5>
+                    <p>Nguyễn Trần Thế Vinh</p>
+                    <p>MSSV:DH52112086</p>
+                    <p>Lớp:D21_TH12</p>
+                </div>
+                <div class="cotthu5">
+                    <h5 class="">mạng xã hội</h5>
+                    <p><a href="https://www.facebook.com/profile.php?id=100074875131267"><i class="fab fa-facebook"></i>
+                            Facebook</a></p>
+                    <p><a href="https://www.tiktok.com/@user1940481986115"><i class="fab fa-tiktok"></i> TikTok</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="myiframe-container" aligin="center">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6592.4985499755685!2d106.6789931371774!3d10.74041089759156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f62a90e5dbd%3A0x674d5126513db295!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgU8OgaSBHw7Ju!5e0!3m2!1svi!2s!4v1714125058390!5m2!1svi!2s"
+                width="1200px" height="250" style="border: 0;padding-bottom: 5px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script>
+        function validateForm() {
+            // Get form inputs
+            var fullName = document.getElementById('fullName').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+
+            // Get error message divs
+            const fullNameErrorMessage = document.getElementById('fullNameErrorMessage');
+            const emailErrorMessage = document.getElementById('emailErrorMessage');
+            const passwordErrorMessage = document.getElementById('passwordErrorMessage');
+            const confirmPasswordErrorMessage = document.getElementById('confirmPasswordErrorMessage');
+
+            // Reset error messages
+            fullNameErrorMessage.innerHTML = '';
+            emailErrorMessage.innerHTML = '';
+            passwordErrorMessage.innerHTML = '';
+            confirmPasswordErrorMessage.innerHTML = '';
+
+            let isValid = true;
+
+            // Validate full name
+            if (fullName.trim() === '') {
+                fullNameErrorMessage.innerHTML = 'Họ Tên không được để trống';
+                isValid = false;
+            }
+
+            // Validate email
+            if (email.trim() === '') {
+                emailErrorMessage.innerHTML = 'Email không được để trống';
+                isValid = false;
+            } else if (!/\S+@\S+\.\S+/.test(email)) {
+                emailErrorMessage.innerHTML = 'Email không hợp lệ';
+                isValid = false;
+            }
+
+            // Validate password
+            if (password.trim() === '') {
+                passwordErrorMessage.innerHTML = 'Mật khẩu không được để trống';
+                isValid = false;
+            } else if (password.length < 6) {
+                passwordErrorMessage.innerHTML = 'Mật khẩu phải chứa ít nhất 6 ký tự';
+                isValid = false;
+            }
+
+            // Validate confirm password
+            if (confirmPassword.trim() === '') {
+                confirmPasswordErrorMessage.innerHTML = 'Xác nhận Mật khẩu không được để trống';
+                isValid = false;
+            } else if (confirmPassword !== password) {
+                confirmPasswordErrorMessage.innerHTML = 'Xác nhận Mật khẩu không khớp';
+                isValid = false;
+            }
+
+            // If form is valid, submit it
+            if (isValid) {
+                alert('Đăng ký thành công!');
+                // Here you can add the code to submit the form
+            }
+        }
+    </script>
+
+</body>
+
+</html>
